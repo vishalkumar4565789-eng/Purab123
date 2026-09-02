@@ -108,6 +108,7 @@
       text-decoration: none;
       box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
       margin-bottom: 25px;
+      cursor: pointer;
     }
 
     .quote {
@@ -118,17 +119,29 @@
     }
 
     .ad-banner {
+      display: block;
       border: 1px solid #005f73;
       border-radius: 12px;
       padding: 12px;
       font-size: 13px;
       color: #a0aec0;
       margin-bottom: 20px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      background: rgba(0, 95, 115, 0.1);
+    }
+
+    .ad-banner:hover {
+      border-color: #00d2ff;
+      background: rgba(0, 95, 115, 0.2);
     }
 
     .ad-banner span {
       color: #00d2ff;
       font-weight: bold;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
     }
 
     .footer {
@@ -147,7 +160,6 @@
 
   <div class="card">
     <div class="profile-img-container">
-      <!-- अपनी फ़ोटो का Link यहाँ लगाएं -->
       <img src="https://i.ibb.co/tTxwX2JT/Tu-Q5o-VVl-Wgq-Es-Mq8s-R-2hrw6z-4-CQym-G1-ALaj-CU5jp-Ww-YLd4g618x-YBA7o68d-Oy-XHCSPC6ja-Synh-Uu-Pj-R3-W.jpg" alt="Munaaf" class="profile-img">
     </div>
 
@@ -162,20 +174,27 @@
 
     <p class="sub-text">Join our learning community and grow your knowledge</p>
 
-    <!-- अपना Telegram Link यहाँ लगाएं -->
+    <!-- Telegram Link -->
     <a href="https://t.me/+Z7bTtxu4N4ZhNThl" class="btn-telegram">JOIN TELEGRAM</a>
 
     <p class="quote">नियत अच्छी और मेहनत सच्ची हो, तो कामयाबी जरूर मिलती है।</p>
 
-    <div class="ad-banner">
-      This Channel Advertise By <span>AI ADS AGENCY</span>
-    </div>
+    <!-- यहाँ AI Agency का लिंक लगाएं -->
+    <a href="https://t.me/YOUR_AI_AGENCY_LINK_HERE" target="_blank" class="ad-banner">
+      This Channel Advertise By 
+      <span>
+        <!-- लोगो इमेज लगाने के लिए नीचे दिए गए टैग का इस्तेमाल करें -->
+        <!-- <img src="YOUR_LOGO_URL_HERE" alt="Logo" style="width:16px; height:16px; border-radius:50%; vertical-align:middle;"> -->
+        AI ADS AGENCY
+      </span>
+    </a>
 
     <div class="footer">
       <p><a href="https://t.me/+jViKIQmWTLFmNjNl">Terms</a> | <a href="https://t.me/+jViKIQmWTLFmNjNl">Privacy</a> | <a href="https://t.me/+jViKIQmWTLFmNjNl">Disclaimer</a></p>
       <p>This site is not part of Facebook™ or endorsed by Facebook™.</p>
     </div>
   </div>
+
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
